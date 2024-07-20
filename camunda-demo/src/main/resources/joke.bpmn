@@ -9,14 +9,12 @@
       <bpmn:extensionElements>
         <camunda:connector>
           <camunda:inputOutput>
+            <camunda:inputParameter name="url">http://localhost:3000</camunda:inputParameter>
+            <camunda:inputParameter name="method">GET</camunda:inputParameter>
             <camunda:outputParameter name="joke">${response}</camunda:outputParameter>
           </camunda:inputOutput>
           <camunda:connectorId>http-connector</camunda:connectorId>
         </camunda:connector>
-        <camunda:inputOutput>
-          <camunda:inputParameter name="uri">http://localhost:3000/</camunda:inputParameter>
-          <camunda:inputParameter name="method">GET</camunda:inputParameter>
-        </camunda:inputOutput>
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_0k1h4nm</bpmn:incoming>
       <bpmn:outgoing>Flow_0zcgzkk</bpmn:outgoing>
